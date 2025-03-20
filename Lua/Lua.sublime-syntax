@@ -6,6 +6,7 @@ version: 2
 
 file_extensions:
   - lua
+  - rockspec
 
 first_line_match: |-
   (?xi:
