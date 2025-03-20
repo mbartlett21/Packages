@@ -1136,9 +1136,14 @@ contexts:
               pop: 1
             - match: |-
                 (?x:
+                  atan2|cosh|frexp|ldexp|log10|pow|sinh|tanh
+                ){{identifier_break}}
+              scope: meta.property.lua support.function.builtin.lua invalid.deprecated.lua
+              pop: 1
+            - match: |-
+                (?x:
                   abs|acos|asin|atan|ceil|cos|deg|exp|floor|fmod|log|max|min
                   |modf|rad|random|randomseed|sin|sqrt|tan|tointeger|type|ult
-                  |atan2|cosh|frexp|ldexp|log10|pow|sinh|tanh
                 ){{identifier_break}}
               scope: meta.property.lua support.function.builtin.lua
               pop: 1
